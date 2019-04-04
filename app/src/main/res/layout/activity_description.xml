@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".DescriptionActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/AppTheme.AppBarOverlay"
+        />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:weightSum="1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|bottom"
+                    android:layout_marginTop="11dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="0.54"
+                        android:id="@+id/isbnLabel"
+                        android:textStyle="bold"
+                        android:text="@string/label_isbn"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/isbntxt"
+                        android:textSize="16dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textColor="#000" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|bottom"
+                    android:layout_marginTop="11dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="0.54"
+                        android:id="@+id/callNoLabel"
+                        android:textStyle="bold"
+                        android:text="@string/label_call_no"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/callNotxt"
+                        android:textSize="16dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textColor="#000"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|bottom"
+                    android:layout_marginTop="11dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="0.54"
+                        android:id="@+id/authorLabel"
+                        android:textStyle="bold"
+                        android:text="@string/label_author"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/authortxt"
+                        android:textSize="16dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textColor="#000"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|bottom"
+                    android:layout_marginTop="11dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="0.54"
+                        android:id="@+id/titleLabel"
+                        android:textStyle="bold"
+                        android:text="@string/label_title"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/titletxt"
+                        android:textSize="16dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textColor="#000"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|bottom"
+                    android:layout_marginTop="11dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="0.54"
+                        android:id="@+id/editionLabel"
+                        android:textStyle="bold"
+                        android:text="@string/label_edition"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/editiontxt"
+                        android:textSize="16dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textColor="#000"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|bottom"
+                    android:layout_marginTop="11dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="0.54"
+                        android:id="@+id/imprintLabel"
+                        android:textStyle="bold"
+                        android:text="@string/label_imprint"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/imprinttxt"
+                        android:textSize="16dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textColor="#000"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|bottom"
+                    android:layout_marginTop="11dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="0.54"
+                        android:id="@+id/descLabel"
+                        android:textStyle="bold"
+                        android:text="@string/label_desc"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/desctxt"
+                        android:textSize="16dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textColor="#000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|bottom"
+                    android:layout_marginTop="11dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="0.54"
+                        android:id="@+id/notesLabel"
+                        android:textStyle="bold"
+                        android:text="@string/label_notes"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/notestxt"
+                        android:textSize="16dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textColor="#000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|bottom"
+                    android:layout_marginTop="11dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="0.54"
+                        android:id="@+id/biblioLabel"
+                        android:textStyle="bold"
+                        android:text="@string/label_biblio"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/bibliotxt"
+                        android:textSize="16dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textColor="#000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|bottom"
+                    android:layout_marginTop="11dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="0.54"
+                        android:id="@+id/subjectLabel"
+                        android:textStyle="bold"
+                        android:text="@string/label_subject"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/subjecttxt"
+                        android:textSize="16dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textColor="#000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|bottom"
+                    android:layout_marginTop="11dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="0.54"
+                        android:id="@+id/otherAuthorLabel"
+                        android:textStyle="bold"
+                        android:text="@string/label_other_author"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/otherAuthortxt"
+                        android:textSize="16dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textColor="#000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|bottom"
+                    android:layout_marginTop="11dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="0.54"
+                        android:id="@+id/entryTitleLabel"
+                        android:textStyle="bold"
+                        android:text="@string/label_entry_title"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/entryTitletxt"
+                        android:textSize="16dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textColor="#000"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/access_text"
+                android:background="@drawable/button_black"
+                android:textColor="@color/colorWhite"
+                android:layout_weight="2"/>
+            <Button
+                android:id="@+id/btnTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/acquasition_text"
+                android:background="@drawable/button_black"
+                android:textColor="@color/colorWhite"
+                android:layout_weight="2"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+</RelativeLayout>
